@@ -1,0 +1,155 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrolling */
+    height: 100%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.pinimg.com/originals/5f/73/95/5f73951b1a1de5f72f457ad3f92f3d7c.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ensures full height of the viewport */
+}
+.container {
+   
+    position: absolute; /* Allows for absolute positioning */
+    left: 0; /* Aligns the container to the left */
+    width: 30%; /* Container takes up 40% of the width */
+    height: 100%; /* Full height of the viewport */
+    background-color:rgba(251, 251, 253, 0.5);
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);   
+}
+h5 {
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+input {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 12px;
+}
+.password-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0d142d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #274284;
+}
+#message {
+    margin-top: 15px;
+    text-align: center;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #a1a3a5;
+}
+.flex-button {
+    flex: 1; /* Each button takes equal space vertically */
+    width: 100%; /* Button takes full width of the container */
+    display: flex;
+    align-items: center; /* Align image and text vertically in the center */
+    justify-content: flex-start; /* Align items to the start (left) */
+    border: none; /* Remove border gaps */
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    padding: 10px; /* Adds padding for visual spacing */
+    margin-top: 10px; /* Adds spacing between buttons */
+}
+.flex-button + .flex-button {
+    margin-top: 3px; 
+}
+.phone-number-container {
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    background-color: white;
+    height: 35px;
+    margin-left: 5px;
+    width: 99%;
+}
+#country-code {
+    border: none;
+    background-color: white;
+    width: 10%;
+    padding: 0.1rem;
+    font-size: 12px;
+    margin-left: 5px;
+    border-right: 1px solid black;
+    appearance: none; /* Removes default select arrow for some browsers */
+}
+#contact-number {
+    border: none;
+    flex: 1;
+    padding: 0.75rem;
+    font-size: 14px;
+    outline: none;
+    background-color: white;
+    margin-top: 7px;
+}
+.social-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two columns for the buttons */
+    gap: 12px; /* Adds space between buttons */
+    margin-bottom:0px; 
+    margin-top: 10px;/* Adds spacing above the button container */
+    justify-items: stretch; /* Ensures buttons stretch to fill the grid */
+    padding: 10px; /* Padding around the grid */
+    background-color:rgba(242, 242, 251, 0); /* Background color for the button box */ 
+    cursor: pointer;
+    font-size: 14px;
+    align-items:center;
+}
+.social-button img {
+    margin-right: 8px;
+    height:24px;
+    width:24px;
+    vertical-align: middle;
+}
+/* Individual Social Button Colors */
+.google {
+    background-color: #db4437;
+}
+
+.instagram {
+    background-color:rgb(120, 25, 67);
+    
+}
+
+.twitter {
+    background-color: #4faee1;
+}
+
+.apple {
+    background-color: black;
+}
+.social-button:hover {
+    background-color: rgba(155, 179, 199);
+}
